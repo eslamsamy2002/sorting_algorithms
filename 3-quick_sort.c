@@ -31,12 +31,12 @@ size_t lomutoPartition(int *array, size_t size, ssize_t start, ssize_t end)
 {
 	int i, j, pivot = array[end];
 
-	for (i = j = start; i < end; i++)
-		if (array[i] < pivot)
-			swap(array, size, &array[i], &array[j++]);
-	swap(array, size, &array[j], &array[i]);
+	for (i = j = start; i < end; j++)
+		if (array[j] < pivot)
+			swap(array, size, &array[j], &array[i++]);
+	swap(array, size, &array[i], &array[end]);
 
-	return (j);
+	return (i);
 }
 
 void quicksort(int *array, size_t size, size_t lo, size_t hi)
