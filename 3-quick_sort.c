@@ -39,7 +39,7 @@ size_t lomutoPartition(int *array, size_t size, ssize_t start, ssize_t end)
 	return (i);
 }
 
-void quicksort(int *array, size_t size, size_t lo, size_t hi)
+void quicksort(int *array, size_t size, ssize_t lo, ssize_t hi)
 {
 	if (lo < hi)
 	{
