@@ -27,7 +27,7 @@ void swap(int *array, size_t size, int *x, int *y)
  *@size:size of array
  *Return: pivot index
  */
-size_t lomutoPartition(int *array, size_t size, size_t start, size_t end)
+size_t lomutoPartition(int *array, size_t size, ssize_t start, ssize_t end)
 {
 	int i, j, pivot = array[end];
 
