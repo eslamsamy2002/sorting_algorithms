@@ -81,8 +81,7 @@ size_t lomutoPartition(int *array, size_t start, size_t end, size_t size)
  */
 void swap(int *x, int *y)
 {
-	int tmp = *x;
-
-	*x = *y;
-	*y = tmp;
+	*x = *x + *y;
+	*y = *x - *y;
+	*x = *x - *y;
 }
