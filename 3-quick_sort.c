@@ -1,6 +1,5 @@
 #include "sort.h"
 #include <stdio.h>
-void q_sort_recursive(int *array, size_t start, size_t end, size_t size);
 
 /**
  * quick_sort - sort array of integer
